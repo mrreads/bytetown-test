@@ -24,8 +24,12 @@ body {
 }
 
 body, input, textarea, a, button {
-    font-family: Grafita;
+    font-family: 'Manrope', sans-serif;
     color: #212424
+}
+
+h1, h2, h3, h4, h5, h6, .title {
+    font-family: 'Grafita', sans-serif;
 }
 
 a {
