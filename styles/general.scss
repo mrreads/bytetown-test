@@ -11,7 +11,6 @@ html {
 }
 
 body {
-    overflow-x: hidden;
     min-height: 100%;
 }
 body, input, textarea, a, button {
@@ -32,6 +31,8 @@ a {
 }
 
 @import './header.scss';
+@import './menu.scss';
+@import './content.scss';
 
 @media screen and (max-width: 1024px) {
     .container {
@@ -55,4 +56,8 @@ a {
     .container {
         padding: 0 15px;
     }
+}
+
+.white {
+    min-height: 500px;
 }

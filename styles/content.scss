@@ -1,0 +1,21 @@
+.content {
+    background-color: #E7E3DA;
+    min-height: 900px;
+
+    & .container {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    &-first {
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-first, &-second, &-third {
+        flex-grow: 1;
+        height: 900px;
+        background-color: #E7E3DA;
+    }
+}

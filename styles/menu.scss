@@ -1,0 +1,86 @@
+.menu {
+    &-top {
+        margin-top: 96px;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    &-title {
+        font-size: 54px;
+        color: #A18460;
+
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            height: 30px;
+            width: 90px;
+            background: url('./../assets/images/triangles.svg');
+            left: -106px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            height: 1px;
+            width: 100%;
+            background-color: #A18460;
+            left: calc(-100% - 60px);
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    &-next {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 33px;
+        min-width: 33px;
+        max-height: 33px;
+        max-width: 33px;
+
+        border: 1px solid #A18460;
+        border-radius: 100%;
+
+        margin-bottom: 10px;
+        align-self: flex-end;
+        cursor: pointer;
+    }
+
+    &-link {
+        margin-top: 32px;
+        text-decoration: underline;
+        font-size: 18px;
+        color: #A18460;
+        font-weight: 500;
+    }
+
+    &-items {
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 0 24px;
+
+        margin-top: 32px;
+        margin-bottom: 96px;
+
+        overflow-x: scroll;
+    }
+
+    &-item {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-end;
+
+        &__image {
+
+        }
+        &__text {
+            margin-top: 24px;
+            font-size: 20px;
+        }
+    }
+}
