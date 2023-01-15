@@ -176,6 +176,16 @@
     }
 }
 
+@media screen and (max-width: 400px) {
+    .popup-form__title {
+        margin-top: 25px;
+        font-size: 32px;
+    }
+    .popup-form__button {
+        width: 100%;
+    }
+}
+
 @media screen and (max-height: 700px) {
     .popup {
         overflow-y: scroll;
