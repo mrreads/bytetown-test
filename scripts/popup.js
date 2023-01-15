@@ -6,7 +6,10 @@ openButton.addEventListener('click', openPopup);
 const closeButton = document.querySelector('.popup-form__close');
 closeButton.addEventListener('click', closePopup);
 
+const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
+
 function openPopup() {
+    document.body.style.paddingRight = `${scrollBarWidth}px`;
     document.body.classList.add('disable-scroll');
 
     gsap.to('.popup', {
@@ -21,6 +24,7 @@ function openPopup() {
 }
 
 function closePopup() {
+    document.body.style.paddingRight = `0px`;
     document.body.classList.remove('disable-scroll');
 
     gsap.to('.popup-form', {
