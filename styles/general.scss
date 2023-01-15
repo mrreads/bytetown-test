@@ -1,5 +1,58 @@
 @import 'fonts.scss';
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    min-height: 100%;
+}
 body, input, textarea, a, button {
     font-family: Grafita;
+    color: #212424
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.container {
+    max-width: calc(1140px + 100px);
+    padding: 0 50px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@import './header.scss';
+
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 0 45px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .container {
+        padding: 0 35px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .container {
+        padding: 0 25px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        padding: 0 15px;
+    }
 }

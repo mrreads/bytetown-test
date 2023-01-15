@@ -9,9 +9,41 @@
     <script type="module" src="./scripts/index.js" defer></script>
   </head>
   <body>
-    <div id="app">
-      <h1>Bytetown</h1>
-      <p>Тестовое задание</p>
-    </div>
+    <header class="header" data-opened="false">
+      <div class="container">
+        <a class="header__logo" href="#"> <img src="./assets/images/logo.svg"> </a>
+        
+        <nav>
+          <ul class="header-navigation">
+            <li class="header-navigation__item expand"> 
+              <p>События <img  class="icon" src="./assets/icons/down.svg"> </p>
+              <div class="header-navigation-dropdown">
+                <a class="header-navigation-dropdown__item" href="#">Кадриль</a>
+                <a class="header-navigation-dropdown__item" href="#">Sans</a>
+                <a class="header-navigation-dropdown__item" href="#">Lorem</a>
+                <a class="header-navigation-dropdown__item" href="#">Coba rest</a>
+              </div>
+            </li>
+            <li class="header-navigation__item"> 
+              <a href="#">События</a> 
+            </li>
+            <li class="header-navigation__item"> 
+              <a href="#">Контакты</a> 
+            </li>
+            <li class="header-navigation__item"> 
+              <a href="#">Перезвоните мне</a> 
+            </li>
+          </ul>
+        </nav>
+        
+        <div class="header-icons">
+          <a href="#" class="header__icon"> <img src="./assets/icons/search.svg"> </a>
+          <a href="#" class="header__icon cart"> <img src="./assets/icons/cart.svg"> <p class="counter">1</p> </a>
+          <a href="#" class="header__icon"> <img src="./assets/icons/profile.svg"> </a>
+          <div class="header__icon burger"> <img src="./assets/icons/down.svg"> </div>
+        </div>
+
+      </div>
+    </header>
   </body>
 </html>
