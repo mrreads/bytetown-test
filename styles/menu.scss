@@ -49,6 +49,8 @@
         margin-bottom: 10px;
         align-self: flex-end;
         cursor: pointer;
+
+        margin-left: 35px;
     }
 
     &-link {
@@ -68,19 +70,55 @@
         margin-bottom: 96px;
 
         overflow-x: scroll;
+        
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        cursor: grab;
+        //scroll-snap-type: x mandatory;
+        //scroll-behavior: smooth;
     }
 
     &-item {
         display: flex;
         flex-flow: column nowrap;
         justify-content: flex-end;
-
+        scroll-snap-align: start;
         &__image {
 
         }
         &__text {
             margin-top: 24px;
             font-size: 20px;
+
+            cursor: pointer;
         }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 760px) {
+    .menu-title {
+        font-size: 48px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .menu-next {
+        margin-left: 15px;
+    }
+    .menu-title {
+        font-size: 37px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .menu-title {
+        font-size: 34px;
     }
 }

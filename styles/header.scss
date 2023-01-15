@@ -164,6 +164,7 @@
             position: relative;          
         }
         & nav {
+            z-index: 10;
             width: 170px;
             transition: .3s all;
             top: calc(100% + 30px);
