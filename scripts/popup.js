@@ -36,3 +36,16 @@ function closePopup() {
         display: 'none'
     });
 }
+
+const popupInputs = document.querySelectorAll('.popup-form input');
+const sendButton = document.querySelector('.popup-form__button');
+sendButton.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    popupInputs.forEach(input => {
+        let checked = input.checkValidity();
+        if (!checked)
+            input.classList.add('error');
+    })
+});
+popupInputs.forEach(input => { input.addEventListener('input', () => input.classList.remove('error')) })

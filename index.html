@@ -109,9 +109,22 @@
         <p class="popup-form__text">Оставьте свои контактные данные и в ближайшее время мы свяжемся с вами:</p>
         
         <div class="popup-form-inputs">
-          <input class="popup-form__input" type="text" name="name" placeholder="Ваше имя *" required>
-          <input class="popup-form__input" type="text" name="name" placeholder="Номер телефона *" required>
-          <input class="popup-form__input" type="text" name="name" placeholder="Комментарий">
+          <div class="popup-form-inputs__wrapper">
+            <input class="popup-form__input" type="text" name="name" required>
+            <label class="popup-form__label">Ваше имя *</label>
+            <span class="popup-form__error">Введите ваш телефон</span>
+          </div>
+          
+          <div class="popup-form-inputs__wrapper">  
+            <input class="popup-form__input" type="text" name="name" required>
+            <label class="popup-form__label">Номер телефона </label>
+            <span class="popup-form__error">Введите ваш телефон</span>
+          </div>
+          
+          <div class="popup-form-inputs__wrapper">
+            <input class="popup-form__input" type="text" name="name" placeholder=" " >
+            <label class="popup-form__label">Комментарий</label>
+          </div>
         </div>
 
         <p class="popup-form__confidentiality">Указывая свои данные вы соглашаетесь с политикой конфиденциальности.</p>
