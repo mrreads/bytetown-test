@@ -76,9 +76,9 @@
         &::-webkit-scrollbar {
             display: none;
         }
-        cursor: grab;
-        //scroll-snap-type: x mandatory;
-        //scroll-behavior: smooth;
+        //cursor: grab;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
     }
 
     &-item {

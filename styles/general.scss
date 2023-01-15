@@ -6,16 +6,18 @@
     box-sizing: border-box;
 }
 
-html, body {
-    overflow-x: hidden;
-}
-
 html {
     height: 100%;
 }
 
 body {
+    overflow-x: hidden;
     min-height: 100%;
+
+    &.disable-scroll {
+        padding-right: 17px;
+        overflow: hidden !important;
+    }
 }
 
 body, input, textarea, a, button {
@@ -38,6 +40,7 @@ a {
 @import './header.scss';
 @import './menu.scss';
 @import './content.scss';
+@import './popup.scss';
 
 @media screen and (max-width: 1024px) {
     .container {
